@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize-typescript";
 import Id from "../../@shared/domain/value-object/id.value-object";
 import Product from "../domain/product.entity";
-import ProductRepository from "./produc.repository";
+import ProductRepository from "./product.repository";
 import ProductModel from "./product.model";
 
 describe("ProductRepository test", () => {
@@ -62,7 +62,7 @@ describe("ProductRepository test", () => {
 
     const product = await productRepository.find("1");
 
-    expect(product.id.id).toEqual(1);
+    expect(product.id.id).toEqual("1");
     expect(product.name).toEqual("Test");
     expect(product.description).toEqual("Test description");
     expect(product.purchasePrice).toEqual(100);

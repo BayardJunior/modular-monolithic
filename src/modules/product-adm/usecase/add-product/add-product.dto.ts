@@ -3,15 +3,15 @@ export interface AddProductInputDto {
   name: string;
   description: string;
   purchasePrice: number;
-  sotck: number;
+  stock: number;
 }
 
-export interface AddProductOutPutDto {
+export interface AddProductOutputDto {
   id: string;
   name: string;
   description: string;
   purchasePrice: number;
-  sotck: number;
+  stock: number;
   createdAt: Date;
-  updateAt: Date;
+  updatedAt: Date;
 }
